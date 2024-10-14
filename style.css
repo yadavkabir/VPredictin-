@@ -205,7 +205,7 @@ header {
 
     .navigation a {
         margin-left: 0; /* Remove margin for mobile */
-        margin-bottom: 15px; /* Add space between links */
+        margin-bottom: 20px; /* Add space between links */
         font-size: 1em; /* Adjust font size for mobile */
     }
 
