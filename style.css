@@ -97,12 +97,15 @@ header {
 }
 
 .input-box {
-    position: relative;
+   
+    position: relative; /* Ensure it stays within normal flow */
+    
     margin: 30px 0;
     padding: 1px;
     background: #fff;
     border: 1px solid #162938;
     border-radius: 10px;
+
 }
 
 .input-box .icon {
@@ -115,6 +118,7 @@ header {
 }
 
 .input-box input {
+    
     padding: 10px;
     padding-left: 40px;
     font-size: 1.1em;
@@ -124,6 +128,29 @@ header {
     border-radius: 10px;
     background: transparent;
 }
+
+.input-box label {
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    
+    
+    font-size: 1.1em;
+    color: #162938;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -20px;
+    left: 0;
+    color: #162938;
+    font-size: 1em;
+}
+
+
+
 
 .remember-forgot {
     display: flex;
