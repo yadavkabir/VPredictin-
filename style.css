@@ -19,13 +19,14 @@ header {
     align-items: center;
 }
 
+
 .navigation a {
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.1em; /* Desktop font size */
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 20px; /* Reduced margin for mobile */
+    margin-left: 20px; /* Space between links */
 }
 
 .navigation .btnLogin-popup {
@@ -36,10 +37,10 @@ header {
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.1em; /* Desktop font size */
     color: #fff;
     font-weight: 500;
-    margin-left: 20px; /* Reduced margin for mobile */
+    margin-left: 20px; /* Space for button */
     transition: .5s;
 }
 
@@ -47,6 +48,8 @@ header {
     background: #fff;
     color: #162938;
 }
+
+
 
 .wrapper_center {
     display: flex;
@@ -195,13 +198,22 @@ header {
 @media screen and (max-width: 768px) {
 
     header {
-        padding: 20px 30px;
-        flex-direction: column; /* Stack logo and navigation */
+        padding: 20px 30px; /* Adjusted padding for mobile */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to the start */
     }
 
     .navigation a {
-        margin-left: 0;
+        margin-left: 0; /* Remove margin for mobile */
         margin-bottom: 15px; /* Add space between links */
+        font-size: 1em; /* Adjust font size for mobile */
+    }
+
+    .navigation .btnLogin-popup {
+        width: 100%; /* Full width button on mobile */
+        height: 40px; /* Adjust button height for mobile */
+        font-size: 1em; /* Adjust font size for mobile */
+        margin-left: 0; /* Remove left margin */
     }
 
     .wrapper_center {
