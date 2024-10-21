@@ -428,6 +428,8 @@ header {
 
 .footer .payment-icons{
     margin-right: 110px;
+    display: flex;  /* Add display: flex to allow for better control of alignment */
+    justify-content: center;
 }
 .footer .payment-icons img {
     width: 50px;
