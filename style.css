@@ -450,4 +450,12 @@ header {
     .footer .left-section, .footer .center-section, .footer .right-section {
         margin: 10px 0;
     }
+    .footer .payment-icons {
+        justify-content: space-around;
+        margin-right: 0;
+    }
+    .footer .payment-icons img {
+        width: 30px;
+        margin: 0 5px;
+    }
 }
